@@ -13,6 +13,13 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Pizza Finder - Multi-Menu Search</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Google AdSense Script - Only load in production -->
+    <% if (process.env.NODE_ENV === 'production') { %>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" 
+      crossorigin="anonymous"></script>
+    <% } %>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
